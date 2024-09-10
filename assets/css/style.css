@@ -461,12 +461,12 @@ footer {
 @media screen and (min-width: 800px) {
   .social-button {
     position: fixed;
-    top: 10rem;
+    top: 15rem;
     right: 2rem;
   }
   .calendar-button {
     position: fixed;
-    top: 18rem;
+    top: 23rem;
     right: 2rem;
   }
 
