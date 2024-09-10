@@ -368,10 +368,6 @@ aside div p:last-child {
   color: rgb(233, 9, 233);
   padding: 1rem;
   font-size: 2rem;
-  position: fixed;
-  z-index: 995;
-  right: 2rem;
-  bottom: 3rem;
   border-radius: 15px;
   box-shadow: -4px 8px 8px rgba(0, 0, 0, 0.2), 4px -8px 8px rgba(0, 0, 0, 0.2);
 }
@@ -382,10 +378,6 @@ aside div p:last-child {
   color: blue;
   padding: 1rem;
   font-size: 2rem;
-  position: fixed;
-  z-index: 995;
-  right: 2rem;
-  bottom: 17rem;
   border-radius: 15px;
   box-shadow: -4px 8px 8px rgba(0, 0, 0, 0.2), 4px -8px 8px rgba(0, 0, 0, 0.2);
 }
@@ -395,12 +387,22 @@ aside div p:last-child {
   color: blue;
   padding: 1rem;
   font-size: 2rem;
-  position: fixed;
-  z-index: 995;
-  right: 2rem;
-  bottom: 10rem;
   border-radius: 15px;
   box-shadow: -4px 8px 8px rgba(0, 0, 0, 0.2), 4px -8px 8px rgba(0, 0, 0, 0.2);
+}
+
+aside div {
+  position: relative;
+}
+
+.fa-tag {
+  padding: 1rem;
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.247);
 }
 
 /* FOOTER */
@@ -413,12 +415,66 @@ footer {
   text-align: center;
   font-size: 1.2rem;
 }
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 700px) {
+  .up-button {
+    background-color: rgba(255, 255, 255, 0.877);
+    border: 2px solid white;
+    color: rgb(233, 9, 233);
+    padding: 1rem;
+    font-size: 2rem;
+    position: fixed;
+    z-index: 995;
+    right: 2rem;
+    bottom: 3rem;
+    border-radius: 15px;
+    box-shadow: -4px 8px 8px rgba(0, 0, 0, 0.2), 4px -8px 8px rgba(0, 0, 0, 0.2);
+  }
+
   .social-button {
-    bottom: 80%;
+    background-color: rgba(255, 255, 255, 0.877);
+    border: 2px solid white;
+    color: blue;
+    padding: 1rem;
+    font-size: 2rem;
+    position: fixed;
+    z-index: 995;
+    right: 2rem;
+    bottom: 17rem;
+    border-radius: 15px;
+    box-shadow: -4px 8px 8px rgba(0, 0, 0, 0.2), 4px -8px 8px rgba(0, 0, 0, 0.2);
   }
   .calendar-button {
-    bottom: 72%;
+    background-color: rgba(255, 255, 255, 0.877);
+    border: 2px solid white;
+    color: blue;
+    padding: 1rem;
+    font-size: 2rem;
+    position: fixed;
+    z-index: 995;
+    right: 2rem;
+    bottom: 10rem;
+    border-radius: 15px;
+    box-shadow: -4px 8px 8px rgba(0, 0, 0, 0.2), 4px -8px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .social-button {
+    position: fixed;
+    top: 10rem;
+    right: 2rem;
+  }
+  .calendar-button {
+    position: fixed;
+    top: 18rem;
+    right: 2rem;
+  }
+
+  .up-button {
+    position: fixed;
+    z-index: 995;
+    right: 2rem;
+    bottom: 3rem;
   }
 }
 
